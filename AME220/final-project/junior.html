@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <title>Junior Year – ivy’s uni recap</title>
+  <link rel="stylesheet" href="styles3.css">
+</head>
+
+<body>
+  <!-- same top bar style as home -->
+  <header class="top-nav">
+    <div class="top-nav__center">photo album</div>
+    <nav class="top-nav__right">
+      <a href="index3.html" class="top-nav__link">home</a>
+    </nav>
+  </header>
+
+  <main class="page page--year" data-year="junior">
+    <!-- year list -->
+    <nav class="year-tabs">
+      <a href="freshman.html" class="year-tab">freshman</a>
+      <a href="sophomore.html" class="year-tab">sophomore</a>
+      <a href="junior.html" class="year-tab year-tab--active">junior</a>
+      <!-- error popup -->
+      <button class="year-tab year-tab--button js-senior-trigger">senior</button>
+    </nav>
+
+    <!-- carousel -->
+    <section class="carousel">
+      <div class="carousel__header">
+        <span class="carousel__tag">photos</span>
+      </div>
+
+      <div class="carousel__frame">
+        <button
+          class="carousel__arrow carousel__arrow--left"
+          id="prevBtn"
+          aria-label="previous photo"
+        >
+          &#8592;
+        </button>
+
+        <img
+          id="carouselImage"
+          class="carousel__image"
+          src=""
+          alt="junior year photos"
+        >
+
+        <button
+          class="carousel__arrow carousel__arrow--right"
+          id="nextBtn"
+          aria-label="next photo"
+        >
+          &#8594;
+        </button>
+      </div>
+
+      <p class="carousel__caption" id="carouselCaption"></p>
+    </section>
+  </main>
+
+  <!-- same error popup used on home -->
+  <div class="modal" id="error-modal" aria-hidden="true">
+    <div class="modal__backdrop js-modal-close"></div>
+    <div class="modal__content" role="dialog" aria-modal="true">
+      <div class="modal__header">
+        <span class="modal__tag">error pop up</span>
+        <button class="modal__close js-modal-close" aria-label="close error popup">
+          &times;
+        </button>
+      </div>
+      <div class="modal__body">
+        sorry this page is still<br>in progress!
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

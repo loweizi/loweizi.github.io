@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ivy’s uni recap</title>
+    <link rel="stylesheet" href="styles3.css" />
+  </head>
+
+  <!-- nav bar -->
+  <body>
+    <header class="top-nav">
+      <div class="top-nav__center">ivy’s uni recap</div>
+      <nav class="top-nav__right">
+        <a href="index3.html" class="top-nav__link top-nav__link--active"
+          >home</a>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main class="page">
+      <section class="about">
+        <h1 class="about__title">about me!</h1> <br />
+
+        <p class="about__text">
+          hi everyone, my name is ivy! since this is my senior year this page
+          will serve to hold memories of what university was like for me!
+
+          below you can click different points on the timeline to view the
+          different years i’ve been at arizona state university!
+        </p>
+
+        <!-- my pfp :D -->
+        <div class="about__photo">
+          <img src="images/IMG_0399.jpg" alt="picture of ivy" />
+        </div>
+      </section>
+
+      <!-- timeline -->
+      <section class="timeline">
+        <div class="timeline__line"></div>
+
+        <a href="freshman.html" class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__label">
+            <span>freshman year</span>
+            <span>aug 2022 – may 2023</span>
+          </div>
+        </a>
+
+        <a href="sophomore.html" class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__label">
+            <span>sophomore year</span>
+            <span>aug 2023 – may 2024</span>
+          </div>
+        </a>
+
+        <a href="junior.html" class="timeline__item">
+          <div class="timeline__dot"></div>
+          <div class="timeline__label">
+            <span>junior year</span>
+            <span>aug 2024 – may 2025</span>
+          </div>
+        </a>
+
+        <!-- if user clicks senior open up a error pop up -->
+        <button class="timeline__item timeline__item--senior js-senior-trigger">
+          <div class="timeline__dot"></div>
+          <div class="timeline__label">
+            <span>senior year</span>
+            <span>aug 2025 – in progress!</span>
+          </div>
+        </button>
+      </section>
+    </main>
+
+    <!-- error popup -->
+    <div class="modal" id="error-modal" aria-hidden="true">
+      <div class="modal__backdrop js-modal-close"></div>
+      <div class="modal__content" role="dialog" aria-modal="true">
+        <div class="modal__header">
+
+          <span class="modal__tag">error pop up</span>
+          <button
+            class="modal__close js-modal-close"
+            aria-label="close error popup">
+            &times;
+          </button>
+
+        </div>
+
+        <div class="modal__body">
+          sorry this page is still <br />
+          in progress!
+        </div>
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
